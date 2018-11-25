@@ -10,17 +10,15 @@
 <div class="page__wrapper">
     <header class="main-header">
         <nav class="main-nav main-header__nav">
+            <a class="logo">
+                <img class="logo__img" src="img/png/logo.png" width="138" height="70" alt="На главную">
+            </a>
             <ul class="main-menu main-nav__menu">
                 <li class="main-menu__item">
                     <a class="main-menu__link">Информация</a>
                 </li>
                 <li class="main-menu__item">
                     <a class="main-menu__link">Фото и видео</a>
-                </li>
-                <li class="main-menu__item">
-                    <a class="main-menu__link">
-                        <img class="main-menu__site-logo" src="img/png/logo.png" width="138" height="70" alt="На главную">
-                    </a>
                 </li>
                 <li class="main-menu__item">
                     <a class="main-menu__link">Карта штата</a>
@@ -49,7 +47,8 @@
                 <li class="reasons-list__item reasons-list__item--numbers reasons-list__item--blue">
                     <h3 class="reasons-list__title light-text">Настоящий городок</h3>
                     <p class="reasons-list__number light-text">№1</p>
-                    <p class="reasons-list__info light-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                    <p class="reasons-list__info light-text">Седона - не аттракцион для туристов, там течет своя
+                        жизнь</p>
                 </li>
                 <li class="reasons-list__item reasons-list__item--img">
                     <p class="reasons-list__img">
@@ -57,17 +56,20 @@
                     </p>
                 </li>
                 <li class="reasons-list__item reasons-list__item--icon">
-                    <p class="reasons-list__icon"><img src="img/svg/icon-house.svg" width="75" height="72" alt="Жилье"></p>
+                    <p class="reasons-list__icon"><img src="img/svg/icon-house.svg" width="75" height="72" alt="Жилье">
+                    </p>
                     <h3 class="reasons-list__icon-title">Жилье</h3>
                     <p class="reasons-list__icon-info">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="reasons-list__item reasons-list__item--icon">
-                    <p class="reasons-list__icon"><img src="img/svg/icon-burger.svg" width="74" height="70" alt="Еда"></p>
+                    <p class="reasons-list__icon"><img src="img/svg/icon-burger.svg" width="74" height="70" alt="Еда">
+                    </p>
                     <h3 class="reasons-list__icon-title">Еда</h3>
                     <p class="reasons-list__icon-info">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="reasons-list__item reasons-list__item--icon">
-                    <p class="reasons-list__icon"><img src="img/svg/icon-souvenir.svg" width="64" height="76" alt="Сувениры"></p>
+                    <p class="reasons-list__icon">
+                        <img src="img/svg/icon-souvenir.svg" width="64" height="76" alt="Сувениры"></p>
                     <h3 class="reasons-list__icon-title">Сувениры</h3>
                     <p class="reasons-list__icon-info">Не только китайского, но и местного производства!</p>
                 </li>
@@ -79,7 +81,8 @@
                 <li class="reasons-list__item reasons-list__item--numbers reasons-list__item--blue">
                     <h3 class="reasons-list__title light-text">Настоящий городок</h3>
                     <p class="reasons-list__number light-text">№2</p>
-                    <p class="reasons-list__info light-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                    <p class="reasons-list__info light-text">Седона - не аттракцион для туристов, там течет своя
+                        жизнь</p>
                 </li>
                 <li class="reasons-list__item reasons-list__item--numbers reasons-list__item--grey">
                     <h3 class="reasons-list__title dark-text">Небольшая площадь</h3>
@@ -101,11 +104,27 @@
     </main>
     <section class="interest">
         <h2 class="interest__title">Заинтересовались?</h2>
-        <p class="interest__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиницв
-            Седоне</p>
-        <p class="interest__button">
-            <button class="interest__button-search" type="button">Поиск гостиниц в Седоне</button>
-        </p>
+        <p class="interest__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="interest__button" type="button">Поиск гостиниц в Седоне</button>
+        <form class="interest__form search-form" action="/">
+            <p class="search-form__input-wrapper">
+                <label class="search-form__label" for="arrival">Дата заезда:</label>
+                <input class="search-form__input" type="text" name="arrival" id="arrival" placeholder="24 апреля 2017">
+            </p>
+            <p class="search-form__input-wrapper">
+                <label class="search-form__label" for="departure">Дата выезда:</label>
+                <input class="search-form__input" type="text" name="departure" id="departure" placeholder="4 июля 2017">
+            </p>
+            <p class="search-form__input-wrapper">
+                <label class="search-form__label" for="adults">Взрослые:</label>
+                <input class="search-form__input search-form__input--count" type="text" name="adults" id="adults" placeholder="2">
+                <label class="search-form__label" for="children">Дети:</label>
+                <input class="search-form__input search-form__inputq2--count" type="text" name="children" id="children" placeholder="0">
+            </p>
+            <p class="search-form__input-wrapper">
+                <button class="search-form__button" type="button">Найти</button>
+            </p>
+        </form>
     </section>
     <footer class="main-footer">
         <a class="main-footer__link" href="#">#visitsedona</a>
