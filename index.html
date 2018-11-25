@@ -114,11 +114,27 @@
     </main>
     <section class="interest">
         <h2 class="interest__title">Заинтересовались?</h2>
-        <p class="interest__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиницв
-            Седоне</p>
-        <p class="interest__button">
-            <button class="interest__button-search" type="button">Поиск гостиниц в Седоне</button>
-        </p>
+        <p class="interest__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="interest__button" type="button">Поиск гостиниц в Седоне</button>
+        <form class="interest__form search-form" action="/">
+            <p class="search-form__input-wrapper">
+                <label class="search-form__label" for="arrival">Дата заезда:</label>
+                <input class="search-form__input" type="text" name="arrival" id="arrival" placeholder="24 апреля 2017">
+            </p>
+            <p class="search-form__input-wrapper">
+                <label class="search-form__label" for="departure">Дата выезда:</label>
+                <input class="search-form__input" type="text" name="departure" id="departure" placeholder="4 июля 2017">
+            </p>
+            <p class="search-form__input-wrapper">
+                <label class="search-form__label" for="adults">Взрослые:</label>
+                <input class="search-form__input search-form__input--count" type="text" name="adults" id="adults" placeholder="2">
+                <label class="search-form__label" for="children">Дети:</label>
+                <input class="search-form__input search-form__inputq2--count" type="text" name="children" id="children" placeholder="0">
+            </p>
+            <p class="search-form__input-wrapper">
+                <button class="search-form__button" type="button">Найти</button>
+            </p>
+        </form>
     </section>
     <footer class="main-footer">
         <a class="main-footer__link" href="#">#visitsedona</a>
