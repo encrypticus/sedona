@@ -1,11 +1,12 @@
+/*Глобальные стили*/
 body {
     margin: 0;
     padding: 0;
 
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
-    line-height: 26px;
     font-weight: 400;
+    line-height: 26px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -24,4 +25,130 @@ input[type="radio"].visually-hidden {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.outline {
+    outline: 1px solid red;
+}
+
+.page {
+    background-color: #f2f2f2;
+}
+
+.page__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+
+    background-color: #fff;
+
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+
+/********************************************HEADER***************************************/
+
+.main-header__nav {
+    position: relative;
+}
+
+.main-nav__logo {
+    position: absolute;
+    left: 50%;
+
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.main-nav__menu {
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 1056px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-menu {
+    list-style: none;
+}
+
+.main-menu__link {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+.main-menu__link:hover {
+    color: #81b3d2;
+}
+
+.main-menu__link:active {
+    color: #cacaca;
+}
+
+.main-menu__item--media {
+    margin-left: 148px;
+}
+
+.main-menu__item--map {
+    margin-left: 388px;
+}
+
+.main-menu__item--hotel {
+    margin-left: 162px;
+}
+
+.welcome-to-sedona {
+    height: 773px;
+    background-image: url("img/png/background photo.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.welcome-footer {
+    flex-basis: 100%;
+    padding-top: 59px;
+    padding-bottom: 51px;
+
+    background-color: #fff;
+    position: relative;
+}
+
+.welcome-footer__title {
+    margin: 0 auto;
+    margin-bottom: 24px;
+    width: 510px;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.welcome-footer__reasons {
+    margin: 0 auto;
+    width: 510px;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.welcome-footer::before {
+    content: '';
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    left: 0;
+    top: -57px;
+
+    background-image: url("img/png/bottom decor.png");
 }
